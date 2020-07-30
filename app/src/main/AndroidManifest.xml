@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.kabtech.allunitconverter1">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".Data" />
+        <activity android:name=".Fuel" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Distance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".area"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Volume"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Weight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Temperature"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Power"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Speed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Energy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Force"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pressure"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cooking"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SettinActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name="com.apptracker.android.module.AppModuleActivity"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <service android:name="com.apptracker.android.track.AppTrackerService" />
+
+    </application>
+
+</manifest>

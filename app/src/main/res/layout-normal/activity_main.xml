@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_above="@+id/leadBoltBanner"
+        android:id="@+id/main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66d4d4d4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fcfbfb"
+                android:onClick="distance_onclick">
+
+
+                <ImageView
+                    android:id="@+id/distance_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/distance" />
+
+                <TextView
+                    android:id="@+id/distance_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/distance"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="area_onclick">
+
+
+                <ImageView
+                    android:id="@+id/area_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/area" />
+
+                <TextView
+                    android:id="@+id/area_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/area"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="volume_onclick">
+
+
+                <ImageView
+                    android:id="@+id/volume_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/volume" />
+
+                <TextView
+                    android:id="@+id/volume_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/vol"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="weight_onclick">
+
+
+                <ImageView
+                    android:id="@+id/weight_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/weight" />
+
+                <TextView
+                    android:id="@+id/weight_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/weight"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="time_onclick">
+
+
+                <ImageView
+                    android:id="@+id/time_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/time"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="temperature_onclick">
+
+
+                <ImageView
+                    android:id="@+id/temperature_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/temperature" />
+
+                <TextView
+                    android:id="@+id/temperature_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/temp"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb"
+                android:onClick="power_onclick">
+
+
+                <ImageView
+                    android:id="@+id/power_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/power" />
+
+                <TextView
+                    android:id="@+id/power_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/power"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="speed_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/speed_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/speedometer" />
+
+                <TextView
+                    android:id="@+id/speed_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/speed"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="energy_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/energy_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/energy" />
+
+                <TextView
+                    android:id="@+id/energy_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/energy"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="force_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/force_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/force" />
+
+                <TextView
+                    android:id="@+id/force_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/force"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="pressure_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/pressure_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pressure" />
+
+                <TextView
+                    android:id="@+id/pressure_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/pressure"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="cooking_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/cooking_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cooking" />
+
+                <TextView
+                    android:id="@+id/cooking_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/cooking"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="fuel_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/fuel_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fuel" />
+
+                <TextView
+                    android:id="@+id/fuel_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/fuel"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="data_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fcfbfb">
+
+
+                <ImageView
+                    android:id="@+id/digital_storage_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/data_sto" />
+
+                <TextView
+                    android:id="@+id/digital_storage_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:text="@string/digitalstorage"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/leadBoltBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/darkgray"
+        app:itemTextColor="@color/darkgraytext"
+        app:menu="@menu/drawermenu"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+<!-- this is for changing the icon color in the drawer menu
+you are going to add it into the android.support.design.widget.navigationView
+        app:itemIconTint="@color/darkgray"
+-->

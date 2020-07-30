@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#66d4d4d4"
+    android:layout_height="match_parent"
+    tools:context=".Volume">
+
+    <EditText
+
+        android:id="@+id/distance_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="133dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingLeft="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/distance_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_round"
+        android:hint="Answer is :"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="15dp"
+        android:textColor="@color/textview_color"
+        android:textSize="35sp" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/distance_textView"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Convert from:"
+            android:textColor="#6c6c6c"
+            android:textSize="35sp" />
+        <TextView
+            android:text="To:"
+            android:textColor="#6c6c6c"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:textSize="35sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choose"
+        android:layout_width="fill_parent"
+        android:layout_height="848dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/content1"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_round"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/teaspoon_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teaspoon"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/tablespoon_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tablespoon"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cup_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cup"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/fluidounce_us_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fluid ounce (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/fluidounce_uk_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fluid ounce (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/pint_us_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pint (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/pint_uk_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pint (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/quart_us_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quart (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/quart_uk_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quart (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/gallon_us_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallon (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/gallon_uk_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallon (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/barrel_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oil barrel"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/millilitre_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Millilitre"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/litre_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Litre"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_cm_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic cm"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_meter_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic meter"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_inch_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic inch"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_foot_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic foot"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_yard_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic yard"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/content2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_round">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/teaspoon_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teaspoon"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/tablespoon_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tablespoon"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cup_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cup"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/fluidounce_us_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fluid ounce (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/fluidounce_uk_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fluid ounce (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/pint_us_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pint (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/pint_uk_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pint (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/quart_us_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quart (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/quart_uk_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quart (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/gallon_us_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallon (US)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/gallon_uk_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallon (UK)"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/barrel_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oil barrel"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/millilitre_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Millilitre"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/litre_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Litre"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_cm_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic cm"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_meter_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic meter"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_inch_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic inch"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_foot_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic foot"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/cubic_yard_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cubic yard"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/choose"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/pass"
+            android:layout_width="100dp"
+            android:background="@drawable/button_round"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:onClick="Calculate_volume"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_height="70dp"
+            android:text="Clear"/>
+
+        <Button
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:id="@+id/calulate_button"
+            android:layout_below="@+id/pass"
+            android:layout_width="100dp"
+            android:textSize="40sp"
+            android:onClick="Calculate_volume"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/button_round"
+            android:textAllCaps="false"
+            android:layout_height="70dp"
+            android:text="Calculate"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/leadBoltBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <!--<EditText
+        android:id="@+id/pass"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:background="@drawable/button_round"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Submit"/>
+
+        -->
+
+
+
+</RelativeLayout>

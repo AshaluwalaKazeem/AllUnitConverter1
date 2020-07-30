@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2721ca</color>
+    <color name="splash">#11e76363</color>
+    <color name="splash_text">#decf4d4d</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="white">#fcfcfc</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="textview_color">#e90206</color>
+    <color name="darkgray">#716c6c</color>
+    <color name="darkgraytext">#0d0d0d</color>
+    <color name="colorSettings">#40000000</color>
+    <color name="colorClick">#abcdef</color>
+</resources>

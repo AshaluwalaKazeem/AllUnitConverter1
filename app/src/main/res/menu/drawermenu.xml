@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/distance_menu"
+            android:icon="@drawable/ic_rulerrr"
+            android:title="@string/distance" />
+        <item
+            android:id="@+id/area_menu"
+            android:icon="@drawable/ic_area"
+            android:title="@string/area" />
+        <item
+            android:id="@+id/volume_menu"
+            android:icon="@drawable/ic_measuring_cup"
+            android:title="@string/vol" />
+        <item
+            android:id="@+id/weight_menu"
+            android:icon="@drawable/ic_law"
+            android:title="@string/weight" />
+        <item
+            android:id="@+id/time_menu"
+            android:icon="@drawable/alarm"
+            android:title="@string/time" />
+        <item
+            android:id="@+id/temperature_menu"
+            android:icon="@drawable/temperature"
+            android:title="@string/temp" />
+        <item
+            android:id="@+id/power_menu"
+            android:icon="@drawable/power"
+            android:title="@string/power" />
+        <item
+            android:id="@+id/speed_menu"
+            android:icon="@drawable/ic_speedometer"
+            android:title="@string/speed" />
+        <item
+            android:id="@+id/energy_menu"
+            android:icon="@drawable/energy"
+            android:title="@string/energy" />
+        <item
+            android:id="@+id/force_menu"
+            android:icon="@drawable/force"
+            android:title="@string/force" />
+        <item
+            android:id="@+id/pressure_menu"
+            android:icon="@drawable/ic_blood_pressure"
+            android:title="@string/pressure" />
+        <item
+            android:id="@+id/cooking_menu"
+            android:icon="@drawable/ic_cutlery"
+            android:title="@string/cooking" />
+        <item
+            android:id="@+id/fuel_menu"
+            android:icon="@drawable/fuel"
+            android:title="@string/fuel" />
+        <item
+            android:id="@+id/data_menu"
+            android:icon="@drawable/ic_cloud_computing"
+            android:title="@string/digitalstorage" />
+
+    </group>
+
+</menu>

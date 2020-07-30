@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#66d4d4d4"
+    android:layout_height="match_parent"
+    tools:context=".Power">
+
+    <EditText
+
+        android:id="@+id/distance_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="133dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingLeft="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/distance_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_round"
+        android:hint="Answer is :"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="15dp"
+        android:textColor="@color/textview_color"
+        android:textSize="35sp" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/distance_textView"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Convert from:"
+            android:textColor="#6c6c6c"
+            android:textSize="35sp" />
+        <TextView
+            android:text="To:"
+            android:textColor="#6c6c6c"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:textSize="35sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choose"
+        android:layout_width="fill_parent"
+        android:layout_height="848dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/content1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_round"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/watt_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/kilowatt_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilowatt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/megawatt_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Megawatt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/calorie_second_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calorie / second"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/kilocalorie_second_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilocalorie / second"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/kilocalorie_hour_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilocalorie / \nhour"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/horsepower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horsepower"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/pferdestarke_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pferdestarke"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/btu_hour_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Btu / hour"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/tonofrefrigeration_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ton of refrigeration"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+
+
+
+
+
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/content2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_round">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/watt_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/kilowatt_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilowatt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/megawatt_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Megawatt"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/calorie_second_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calorie / second"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/kilocalorie_second_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilocalorie / second"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/kilocalorie_hour_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kilocalorie / \nhour"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/horsepower2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horsepower"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/pferdestarke_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pferdestarke"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <RadioButton
+                        android:id="@+id/btu_hour_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Btu / hour"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+                    <RadioButton
+                        android:id="@+id/tonofrefrigeration_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ton of refrigeration"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/choose"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/pass"
+            android:layout_width="100dp"
+            android:background="@drawable/button_round"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:onClick="Calculate_power"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_height="70dp"
+            android:text="Clear"/>
+
+        <Button
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:id="@+id/calulate_button"
+            android:layout_below="@+id/pass"
+            android:layout_width="100dp"
+            android:textSize="40sp"
+            android:onClick="Calculate_power"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/button_round"
+            android:textAllCaps="false"
+            android:layout_height="70dp"
+            android:text="Calculate"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/leadBoltBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <!--<EditText
+        android:id="@+id/pass"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:background="@drawable/button_round"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Submit"/>
+
+        -->
+
+
+
+</RelativeLayout>

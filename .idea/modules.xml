@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllUnitConverter1.iml" filepath="$PROJECT_DIR$/AllUnitConverter1.iml" group="AllUnitConverter1" />
+      <module fileurl="file://$PROJECT_DIR$/Material-Color-Picker-master/Material-Color-Picker-master.iml" filepath="$PROJECT_DIR$/Material-Color-Picker-master/Material-Color-Picker-master.iml" group="AllUnitConverter1/Material-Color-Picker-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AllUnitConverter1/app" />
+    </modules>
+  </component>
+</project>
